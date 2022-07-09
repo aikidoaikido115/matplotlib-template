@@ -11,18 +11,17 @@ def bar(*args,title,percent):
     plt.ylabel('เปอร์เซ็นต์ (%)',color='orange',fontsize=25)
 
     x = []
-    y = percent #ต้องแก้เอง
+    y = percent
     for i in args:
         x.append(i)
 
 
     plt.bar(x,y,width=0.42,color='#6de8c3')
 
-    plt.savefig(r'.\new.jpg')
-    plt.show()
+    plt.savefig(r'.\bar.jpg')
+    # plt.show()
     
 
-
-
 if __name__ == '__main__':
+    
     bar('กรุงเทพ','ปริมณฑล','อื่นๆ','เชียงใหม่',title='user',percent=[100,50,4,20])
